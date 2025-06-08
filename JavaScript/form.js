@@ -1,7 +1,7 @@
 // Initialize EmailJS with your user ID
 (function() {
     // Use the same EmailJS credentials as in the OTP form
-    emailjs.init('NP2ZErhB-YRWGY114');
+    emailjs.init('Pf4cZAaeYv4qn7WbF');
 })();
 
 // Get the email from URL parameters
@@ -60,17 +60,16 @@ form.addEventListener('submit', function(e) {
         
         // Prepare the email content
         const templateParams = {
-            to_email: 'prakharsaxena3416@gmail.com', // Change this to your receiving email
-            from_name: 'Form Submission',
+            to_email: 'officialhikraze@gmail.com', // Change this to your receiving email
+            from_name: 'HiKraze User Form',
             user_name: name,
             user_email: userEmail,
             user_phone: phone,
             user_address: address,
-            reply_to: userEmail
         };
         
         // Send the email using EmailJS
-        emailjs.send('service_9r4j8p9', 'template_r5zopyo', templateParams)
+        emailjs.send('service_n9t5xtr', 'template_9yfgy6c', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 
